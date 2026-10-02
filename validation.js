@@ -16,7 +16,7 @@ const checkInputValidity = (formElement, inputElement, settings) => {
       formElement,
       inputElement,
       inputElement.validationMessage,
-      settings
+      settings,
     );
   } else {
     hideInputError(formElement, inputElement, settings);
@@ -27,7 +27,7 @@ function ToggleButtonState(inputList, settings) {}
 
 const setEventListeners = (formElement, settings) => {
   const inputList = Array.from(
-    formElement.querySelectorAll(settings.inputSelector)
+    formElement.querySelectorAll(settings.inputSelector),
   );
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", function () {
