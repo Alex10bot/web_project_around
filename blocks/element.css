@@ -1,7 +1,7 @@
 .card__area {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
-  margin-top: 31px;
+  margin-top: 31;
 }
 .card {
   background-color: #fff;
