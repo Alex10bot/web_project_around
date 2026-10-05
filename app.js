@@ -65,7 +65,7 @@ function createCard(name, link) {
     openPopupImageToggle(name, link);
   });
   cardTitle.textContent = name;
-  cardImage.src = location;
+  cardImage.src = link;
   return card;
 }
 
